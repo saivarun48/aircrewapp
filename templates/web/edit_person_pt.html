@@ -1,0 +1,13 @@
+{% extends 'layouts/master_pt.html' %}
+{% block title %}Editar pessoa{% endblock %}
+{% block body %}
+<h1>Editar pessoa</h1>
+<form method="post" enctype="multipart/form-data">
+	{{ generate_fields(form) }}
+	<input type="submit" class="btn btn-success" value="Salvar">
+</form>
+{% endblock %}
+<footer class="container">
+	<br>
+	<p>&copy; 2021 The Cloud Bootcamp. All rights reserved (Created for educational purporses only - prohibited reproduction)</p>
+</footer>
